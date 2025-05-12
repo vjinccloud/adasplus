@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/favicon.ico" />
+    <title>ADASPLUS Contact</title>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+TC:wght@100..900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 共用樣式 -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <noscript
+    >您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態</noscript
+  >
+  <body>
+    <div class="adas_view">
+      <!-- header -->
+      <div class="headerView"></div>
+
+      <!-- main -->
+      <main>
+        <!-- contact banner -->
+        <div class="contact_banner">
+          <img src="/assets/images/contact-banner.png" alt="" />
+          <div class="contact_banner_title">
+            <div class="en_title hide_en">CONTACT US</div>
+            <div class="zh_title hide_en">聯絡我們</div>
+            <div class="zh_title hide_zh">CONTACT US</div>
+          </div>
+        </div>
+        <!-- contact title -->
+        <div class="contact_title">
+          <h1>Connect with us</h1>
+          <p class="lang" key="contact_view_text">
+            啟簡的AI模組應用於ADAS駕駛輔助、DMS/OMS監控及其他影像辨識應用，可授權SI業者AI級別影像解決方案；啟簡創新的
+            IC 設計商業模式，為 IC 設計公司提供優質 EDA
+            解決方案及設計服務能力、並協同設計性價比高的ASIC方案並提供出海口，創造雙贏的局面；啟簡亦具備SI系統整合設計服務能力，歡迎相關業者與我們聯繫。
+          </p>
+        </div>
+
+        <!-- contact form -->
+        <div class="contact_form_box">
+          <div class="contact_form">
+            <div class="form_row">
+              <div class="form_item">
+                <div class="form_label lang" key="contact_name_text">
+                  * 姓名
+                </div>
+                <input type="text" id="username" />
+              </div>
+              <div class="form_item">
+                <div class="form_label lang" key="contact_phone_text">
+                  * 聯絡電話
+                </div>
+                <input type="text" id="phone" />
+              </div>
+            </div>
+            <div class="form_item">
+              <div class="form_label lang" key="contact_email_text">
+                * 電子信箱
+              </div>
+              <input type="text" id="email" />
+            </div>
+            <div class="form_item">
+              <div class="form_label lang" key="contact_content_text">
+                * 聯繫內容
+              </div>
+              <textarea id="messagecontent"></textarea>
+            </div>
+            <div class="form_btn">
+              <button class="cursor clear lang" key="contact_clear_text" onclick="clearval()">
+                清除
+              </button>
+              <button
+                class="cursor send lang"
+                key="contact_send_text"
+                onclick="saveData()"
+              >
+                送出
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- contact way -->
+        <div class="contact_way">
+          <!-- contact way banner -->
+          <img
+            class="contact_way_banner"
+            src="/assets/images/contact-way.png"
+            alt="contact way"
+          />
+          <!-- contact way content -->
+          <div class="contact_way_content">
+            <div class="contact_way_triangle"></div>
+            <div class="contact_way_list">
+              <div class="contact_way_item">
+                <img
+                  class="contact_way_item_img"
+                  src="/assets/images/contact-email.svg"
+                  alt=""
+                />
+                <div class="contact_way_item_content">
+                  <h1>Reach us on email</h1>
+                  <p>Our friendly team is here to help.</p>
+                  <a
+                    class="cursor"
+                    href="mailto:kc.wu@adasplus-tech.com"
+                    target="_blank"
+                    >kc.wu@adasplus-tech.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact_way_item">
+                <img
+                  class="contact_way_item_img"
+                  src="/assets/images/contact-phone.svg"
+                  alt=""
+                />
+                <div class="contact_way_item_content">
+                  <h1>Phone</h1>
+                  <p>Mon-Fri from 8am to 5pm.</p>
+                  <a class="cursor" href="tel:+886-4-37007762">04-37007762</a>
+                </div>
+              </div>
+              <div class="contact_way_item">
+                <img
+                  class="contact_way_item_img"
+                  src="/assets/images/contact-office.svg"
+                  alt=""
+                />
+                <div class="contact_way_item_content">
+                  <h1>Office</h1>
+                  <p>Come say hello at our office.</p>
+                  <a
+                    class="cursor lang"
+                    key="contact_address"
+                    href="https://maps.app.goo.gl/ZKQftWWHEENGxqjL6"
+                    >台中市西區民權路219號5樓之2</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <div class="footerView"></div>
+    </div>
+    <div
+      class="modal fade bd-example-modal-sm"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+      id="myModal"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content p-4">
+          <p id="modaltext" style="font-size: larger"></p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      //頁面讀取資料
+      document.addEventListener("DOMContentLoaded", function () {});
+
+      function clearval(){
+        $("#username").val("");
+        $("#phone").val("");
+        $("#email").val("");
+        $("#messagecontent").val("");
+      }
+      const url = "../webadmin/contact_post.php";
+      async function saveData() {
+        if ($("#username").val() == "") {
+          alert("請填寫姓名");
+          return;
+        }
+        if ($("#phone").val() == "") {
+          alert("請填寫聯絡電話");
+          return;
+        }
+        if ($("#email").val() == "") {
+          alert("請填寫電子信箱");
+          return;
+        }
+        if ($("#messagecontent").val() == "") {
+          alert("請填寫聯繫內容");
+          return;
+        }
+        //   console.log({ "editors:": CKEDITOR.editor });
+        //   return;
+
+        const form_data = new FormData();
+        form_data.append("dowhat", "add");
+
+        form_data.append("username", $("#username").val());
+        form_data.append("phone", $("#phone").val());
+        form_data.append("email", $("#email").val());
+        form_data.append("messagecontent", $("#messagecontent").val());
+
+        // console.log({
+        //     'myeditor:': JSON.stringify(data)
+        // });
+        try {
+          const response = await fetch(url, {
+            method: "POST",
+
+            body: form_data, //JSON.stringify(data),
+          });
+          if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+          }
+
+          const json = await response.text();
+          alert('留言已送出')
+            // $("#modaltext").text("編輯成功");
+            // $("#myModal").modal("show");
+            clearval();
+          // if (json.isSuccess) {
+          
+          // } else {
+          //   alert('留言送出失敗')
+          //   // $("#modaltext").text("編輯失敗");
+          //   // $("#myModal").modal("show");
+          // }
+          //   console.log({
+          //     "response:": json,
+          //   });
+        } catch (error) {
+          console.error(error.message);
+        }
+      }
+    </script>
+    <!-- jquery  -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- 共用方法 -->
+    <script src="/assets/js/common.js"></script>
+    <!-- 載入元件 -->
+    <script src="/assets/js/loadCompontents.js"></script>
+    <!-- 語言切換 -->
+    <script src="/assets/js/language.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+@charset "utf-8"; 
+
+form select optgroup {
+	background: #d9e6f0 none repeat scroll 0 0;
+}
+
+form select option {
+	background: #fff none repeat scroll 0 0;
+}
+
+input.daySearch {
+	width: 80px;
+}
+
+.comingSoon {
+	text-decoration: line-through;
+	color: #aaa;
+}
+
+.comingSoon:hover {
+	text-decoration: line-through;
+	color: #C00;
+}
+
+.dataRow, .contractRow {
+	transition: all 0.3s ease;
+}
+.dataRow:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.get-org-chart .get-oc-tb input {
+	width: 100px;
+}
+
+span.dataValue {
+	min-height: 27px;
+	line-height: 27px;
+	font-size: 18px;
+	display: block;
+	border-bottom: 1px #CFCFCF solid;
+}
+
+.text-overflow-js {
+	overflow: hidden;
+	word-break: keep-all;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+/* CKEditor 編輯區塊 */
+.ck-editor__editable_inline {
+	/* 設定最低高度 */
+    min-height: 300px;
+}

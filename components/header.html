@@ -1,0 +1,276 @@
+<header class="main_header">
+    <!-- logo -->
+    <a class="header_logo" href="/">
+      <img src="/assets/images/logo.svg" alt="logo">
+    </a>
+    
+    <!-- pc -->
+    <div class="header_operate">
+        <!-- menu -->
+        <nav class="header_menu">
+            <a class="lang index_link" key="index_link" href="/">首頁</a>
+            <a class="lang service_link" key="service_link" href="/pages/service.html">人工智能應用</a>
+            <a class="lang cdp_link" key="cdp_link" href="/pages/cdp.html">協同設計平台</a>
+            <a class="lang about_link" key="about_link" href="/pages/about.html">關於我們</a>
+        </nav>
+
+        <!-- other -->
+        <div class="header_other">
+            <a class="lang contact_btn cursor" key="contact_btn" href="/pages/contact.html">聯絡我們</a>
+            <div class="other_hr"></div>
+            <div class="lang_btn">
+                <div class="lang_now">
+                  <span class="zh_lang">中文</span>
+                  <span class="en_lang">EN</span>
+                  <img src="/assets/images/arrow_down.svg" alt="">
+                </div>
+                <div class="lang_popup">
+                  <div class="lang_option lang_zh" onclick="changeLang('zh')">中文</div>
+                  <div class="lang_hr"></div>
+                  <div class="lang_option lang_en" onclick="changeLang('en')">EN</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mobile -->
+    <div class="header_mobile_operate">
+      <div class="nav_btn nav_btn_pc" >
+        <div class="menu_open" onclick="menuTurn('open')"><img src="/assets/images/menu.svg" alt="menu"></div>
+        <div class="menu_close" onclick="menuTurn('close')"><img src="/assets/images/close.svg" alt="menu close"></div>
+      </div>
+      
+    </div>
+    <!-- mobile menu -->
+    <div class="header_mobile_menu" id="header_mobile_menu">
+      <a class="lang index_link" key="index_link" href="/">首頁</a>
+      <a class="lang service_link" key="service_link" href="/pages/service.html">人工智能應用</a>
+      <a class="lang cdp_link" key="cdp_link" href="/pages/cdp.html">協同設計平台</a>
+      <a class="lang about_link" key="about_link" href="/pages/about.html">關於我們</a>
+      <a class="lang contact_link" key="contact_btn" href="/pages/contact.html">聯絡我們</a>
+      <div class="mb_lang_btn" onclick="changeLang()">
+        <img src="/assets/images/global.svg" alt="">
+        <span class="hide_zh">中文</span>
+        <span class="hide_en">EN</span>
+      </div>
+    </div>
+</header>
+<script>
+  // 判斷選單 active 狀態
+  if (location.pathname === '/') {
+    $(".index_link").addClass("active");  
+  }
+  if (location.pathname === '/pages/service.html') {
+    $(".service_link").addClass("active");  
+  }
+  if (location.pathname === '/pages/cdp.html') {
+    $(".cdp_link").addClass("active");  
+  }
+  if (location.pathname === '/pages/about.html') {
+    $(".about_link").addClass("active");  
+  }
+  if (location.pathname === '/pages/contact.html') {
+    $(".contact_link").addClass("active");  
+  }
+</script>
+<style>
+/* Header */
+.main_header {
+  width: 100%;
+  height: 90px;
+  box-shadow: 0 16px 32px -8px rgba(12, 12, 13, 0.4);
+  background-color: #092ACF;
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_logo{
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 800;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+}
+.header_operate{
+  display: flex;
+  gap: 24px;
+}
+.header_menu{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.header_menu a {
+  padding: 0 24px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header_menu a.active:after, .header_menu a:hover:after{
+  content:'';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 4px solid #fff;
+}
+.header_other{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 4px;
+}
+.header_other .contact_btn {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0 24px;
+  cursor: pointer;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.header_other .other_hr{
+  width: 1px;
+  height: 20px;
+  background-color: #fff;
+}
+.header_other .lang_btn{
+  position: relative;
+  height: 100%;
+}
+.lang_now .en_lang{
+  display: none;
+}
+.header_other .lang_btn .lang_now{
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  height: 100%;
+}
+.header_other .lang_btn .lang_now span{
+  width: 24px;
+  text-align: center;
+}
+.header_other .lang_btn .lang_now img{
+  width: 12px;
+  height: 12px;
+}
+.header_other .lang_btn .lang_popup{
+  display: none;
+  position: absolute;
+  right: 4px;
+  top: 90px;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 0 15px;
+  border-bottom: 5px solid #092ACF;
+}
+.header_other .lang_btn .lang_popup .lang_option{
+  height: 35px;
+  width: 100%;
+  color: #5A5A5A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+.header_other .lang_btn .lang_popup .lang_hr{
+  margin: 8px 10px;
+  height: 1px;
+  width: calc(100% - 20px);
+  background-color: #FAFAFA;
+}
+.header_other .lang_btn:hover .lang_popup{
+  display: block;
+}
+
+
+.header_mobile_operate {
+  display: none;
+  position: relative;
+  z-index: 2;
+}
+.header_mobile_operate .menu_close{
+  display: none;
+}
+.main_header .header_mobile_menu{
+  position: fixed;
+  right: 0;
+  top: 60px;
+  background: #092ACF;
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: none;
+  z-index: 1;
+  justify-content: space-between;
+  padding: 27px 20px;
+}
+.main_header .header_mobile_menu a{
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 48.5px;
+  text-decoration: none;
+  opacity: .5;
+}
+.main_header .header_mobile_menu a.active{
+  opacity: 1;
+}
+.main_header .header_mobile_menu .mb_lang_btn{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 48.5px;
+  gap: 10px;
+  user-select: none;
+}
+.main_header .header_mobile_menu .mb_lang_btn img{
+  width: 18px;
+  height: 18px;
+}
+@media (max-width: 1030px) {
+  .main_header{
+    padding: 0 20px;
+  }
+}
+@media (max-width: 950px) {
+  .header_menu a{
+    padding: 0 14px;
+  }
+}
+@media (max-width: 830px) {
+  .main_header{
+    height: 60px;
+    padding: 0 20px 0 0;
+  }
+  .header_logo{
+    padding: 6px 0;
+    background-color: #092ACF;
+  }
+  .header_operate{
+     display: none;
+  }
+  .header_mobile_operate{
+    display: block;
+  }
+}
+</style>
