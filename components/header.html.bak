@@ -11,7 +11,6 @@
             <a class="lang index_link" key="index_link" href="/">首頁</a>
             <a class="lang service_link" key="service_link" href="/pages/service.html">人工智能應用</a>
             <a class="lang cdp_link" key="cdp_link" href="/pages/cdp.html">協同設計平台</a>
-            <a class="lang system_link" key="system_link" href="/pages/system.html">系統整合應用</a>
             <a class="lang about_link" key="about_link" href="/pages/about.html">關於我們</a>
         </nav>
 
@@ -47,7 +46,6 @@
       <a class="lang index_link" key="index_link" href="/">首頁</a>
       <a class="lang service_link" key="service_link" href="/pages/service.html">人工智能應用</a>
       <a class="lang cdp_link" key="cdp_link" href="/pages/cdp.html">協同設計平台</a>
-      <a class="lang system_link" key="system_link" href="/pages/system.html">系統整合應用</a>
       <a class="lang about_link" key="about_link" href="/pages/about.html">關於我們</a>
       <a class="lang contact_link" key="contact_btn" href="/pages/contact.html">聯絡我們</a>
       <div class="mb_lang_btn" onclick="changeLang()">

@@ -3,7 +3,6 @@ var arrLang = {
       "index_link": "HOME",
       "service_link": "AI APPLICATIONS",
       "cdp_link": "CDP",
-      "system_link":"SYSTEM INTEGRATION",
       "about_link": "ABOUT US",
       "contact_btn": "CONTACT",
       "home_banner_text": "adasplus Co., Ltd. is registered in Taichung City. Its core value is the application of AI algorithms. In 2024, the founding team and SanJet jointly raised funds to expand its business and develop artificial intelligence, edge computing, system applications, and related design services.",
@@ -61,51 +60,11 @@ var arrLang = {
       "contact_content_text": "* Content",
       "contact_clear_text": "Clear",
       "contact_send_text": "Send",
-       //系統整合應用
-       "system_title":"Product Implementation of SI and AI–ASIC",
-       "system_text_1":"adasplus System Integration Application – Positioning and Mission:",
-       "system_text_2":"Positioning",
-       "system_text_3":"adasplus serves as a bridge between technology and product realization in the AI industry, leveraging its professional System Integration (SI) capabilities to help clients transform ideas into market-ready products.",
-       "system_text_4":"Mission",
-       "system_text_5":"To integrate cutting-edge AI and IC technologies for innovative product design and delivery; to establish a high-efficiency R&D and production ecosystem that provides clients with end-to-end ODM solutions.",
-       "system_content_title_1":"Technical and Collaborative Highlights of System Integration Applications",
-       "system_content_1_title":"Technical integration capabilities",
-       "system_content_1_1_text":"Rapid deployment capabilities to shorten time-to-market.",
-       "system_content_1_2_text":"Enables software-hardware integration to enhance computing performance and power efficiency.",
-       "system_content_2_title":"Diverse application scenarios",
-       "system_content_2_1_text":"Applicable across various industry sectors, covers edge computing, smart terminals, industrial automation, and more.",
-       "system_content_2_2_text":"Highly customized solutions tailored to vertical market needs.",
-       "system_content_3_title":"Extended ODM services",
-       "system_content_3_1_text":"Providing full-process support from product design to mass production, helping clients accelerate time-to-market.",
-       "system_content_3_2_text":"Comprehensive testing and verification processes to ensure quality and stability.",
-       "system_content_4_title":"AI AI model development",
-       "system_content_4_1_text":"Provides AI model training and tuning services based on client needs.",
-       "system_content_4_2_text":"Integration capabilities from AI modules to system design.",
-       "system_content_5_title":"High-performance ASIC for AI SoC",
-       "system_content_5_1_text":"Collaborate with ASIC design teams to optimize SoC architecture.",
-       "system_content_5_2_text":"Close collaboration with chip design teams to accelerate product deployment.",
-       "system_content_title_2":"AI Innovation and Transformation of System Integration in the AI Era",
-       "system_col_1_title":"Challenges",
-       "system_col_1_1_text":"Product demands are more diverse, and market competition is intense.",
-       "system_col_1_2_text":"Efficient integration capabilities have become a necessary requirement.",
-       "system_col_1_3_text":"Clients expect complete commercial value, not just isolated solutions.",
-       "system_col_2_title":"Opportunities",
-       "system_col_2_1_text":"AI technology introduces smarter possibilities for products.",
-       "system_col_2_2_text":"High-performance IC chips enhance computational capabilities.",
-       "system_col_2_3_text":"SI experience enables rapid transformation of technology into rich.",
-       "system_content_title_3":"The Value Created by adasplus’ System Integration Application",
-       "system_value_1_1_text":"Reducing Development Costs and Risks",
-       "system_value_1_2_text":"Provides more stable and efficient support for product development, minimizing capital waste and the risk of technical loss.",
-       "system_value_2_1_text":"Reducing Development Costs and Risks",
-       "system_value_2_2_text":"Provides more stable and efficient support for product development, minimizing capital waste and the risk of technical loss.",
-       "system_value_3_1_text":"Reducing Development Costs and Risks",
-       "system_value_3_2_text":"Provides more stable and efficient support for product development, minimizing capital waste and the risk of technical loss.",
     },
     "zh": {
       "index_link": "首頁",
       "service_link": "人工智能應用",
       "cdp_link": "協同設計平台",
-      "system_link":"系統整合應用",
       "about_link": "關於我們",
       "contact_btn": "聯絡我們",
       "home_banner_text": "啟簡股份有限公司登記於台中市，核心價值為AI演算法的應用，2024年由創始團隊集資後擴展業務，發展人工智能、邊緣運算、系統應用、及相關設計服務。",
@@ -163,47 +122,6 @@ var arrLang = {
       "contact_content_text": "* 聯繫內容",
       "contact_clear_text": "清除",
       "contact_send_text": "送出",
-      //系統整合應用
-      "system_title":"SI與AI-ASIC的產品實現",
-      "system_text_1":"啟簡系統整合應用的定位與使命：",
-      "system_text_2":"定位",
-      "system_text_3":"啟簡是AI產業中技術與產品落地的橋樑，憑藉專業的系統整合(SI) 能力，幫助客户從創意構想到產品上市。",
-      "system_text_4":"使命",
-      "system_text_5":"整合最前沿的AI及IC技術，實現創新產品設計與交付；建立高效率的研發、生產生態系，為客户提供端到端的 ODM解決方案。",
-      "system_content_title_1":"系統整合應用的技術與合作亮點",
-      "system_content_1_title":"技術整合能力",
-      "system_content_1_1_text":"快速部署能力，縮短產品上市時程",
-      "system_content_1_2_text":"實現軟硬整合，提升運算效能與能耗效率",
-      "system_content_2_title":"多樣化應用場景",
-      "system_content_2_1_text":"可應用於多種產業領域，涵蓋邊緣運算、智慧終端、工業自動化等應用",
-      "system_content_2_2_text":"高度客製化的解決方案，針對垂直市場需求",
-      "system_content_3_title":"ODM服務延伸",
-      "system_content_3_1_text":"提供從產品設計到量產的全流程支持，協助客戶加速產品導入市場",
-      "system_content_3_2_text":"完整的測試驗證流程，確保品質與穩定性",
-      "system_content_4_title":"AI Model開發",
-      "system_content_4_1_text":"依據客戶需求提供 AI 模型訓練與調校服務",
-      "system_content_4_2_text":"從AI模組到系統設計的整合能力",
-      "system_content_5_title":"ASIC高效AI SoC",
-      "system_content_5_1_text":"與 ASIC 設計團隊合作，優化 SoC 架構",
-      "system_content_5_2_text":"晶片設計團隊的協同合作，加速產品導入",
-      "system_content_title_2":"AI 時代系統整合應用的創新與變革",
-      "system_col_1_title":"挑戰",
-      "system_col_1_1_text":"產品需求更多樣化，市場競爭激烈",
-      "system_col_1_2_text":"高效率的整合能力成為必要需求",
-      "system_col_1_3_text":"客戶期望的是完整商業價值，而非單一解決方案",
-      "system_col_2_title":"機遇",
-      "system_col_2_1_text":"AI技術為產品帶來更多智慧的可能性",
-      "system_col_2_2_text":"IC高效晶片為技術提供更佳運算能力",
-      "system_col_2_3_text":"SI經驗讓技術快速轉化為更豐應用",
-      "system_content_title_3":"啟簡系統整合應用創造的價值",
-      "system_value_1_1_text":"降低開發成本與風險",
-      "system_value_1_2_text":"提供更穩定、更高效的產品開發支持，減少資金浪費及技術損失風險。",
-      "system_value_2_1_text":"提升產品競爭力",
-      "system_value_2_2_text":"服務整合為完整解決方案，滿足客戶特定需求，涵蓋設計、開發、部署及維護階段，實現高效運營與最佳化功能。",
-      "system_value_3_1_text":"長期合作關係",
-      "system_value_3_2_text":"生態系的完整性可以確保可持續發展的合作模式，讓客戶專注在核心業務，而將技術整合與產品開發放心交給啟簡處理。",
-     
-      
     }
 };
 
@@ -239,7 +157,6 @@ $(function() {
       $('.en_lang').css("display",'none')  
       $('.hide_en').css("display",'block') 
       $('.hide_zh').css("display",'none') 
-      $('body').addClass('body_zh').removeClass('body_en');
     }
     if (lang === 'en') {
       $('.lang_zh').css("color",'#5A5A5A')  
@@ -248,7 +165,6 @@ $(function() {
       $('.en_lang').css("display",'block')  
       $('.hide_en').css("display",'none')
       $('.hide_zh').css("display",'block')
-      $('body').addClass('body_en').removeClass('body_zh');
     }
   }, 100);
 });
@@ -275,7 +191,6 @@ function changeLang(_lang){
     $('.en_lang').css("display",'none')  
     $('.hide_en').css("display",'block') 
     $('.hide_zh').css("display",'none') 
-    $('body').addClass('body_zh').removeClass('body_en');
   }
   if (lang === 'en') {
     $('.lang_zh').css("color",'#5A5A5A')  
@@ -284,7 +199,6 @@ function changeLang(_lang){
     $('.en_lang').css("display",'block') 
     $('.hide_en').css("display",'none')
     $('.hide_zh').css("display",'block') 
-    $('body').addClass('body_en').removeClass('body_zh');
   }
 
   $(".lang").each(function(index, element) {
